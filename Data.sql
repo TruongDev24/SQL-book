@@ -5,18 +5,18 @@ VALUES
 ('tranthi', 'password456', N'Trần Thị', 'tranthi.jpg', 'tranthi@email.com', '2024-02-28 11:14:27', 0, '9876543210', '1995-05-15');
 
 -- Chèn dữ liệu mẫu cho bảng dbo.DanhMuc
-INSERT INTO dbo.DanhMuc (ten_danhmuc, mo_ta)
+INSERT INTO dbo.DanhMuc (ten_danhmuc, mo_ta, vi_tri)
 VALUES
-(N'Tiểu thuyết', N'Tiểu thuyết yêu quái'),
-(N'Truyện ngắn', N'Truyện cười');
+(N'Tiểu thuyết', N'Tiểu thuyết yêu quái', 'B'),
+(N'Truyện ngắn', N'Truyện cười', 'T');
 
 -- Chèn dữ liệu mẫu cho bảng dbo.TheLoai
-INSERT INTO dbo.TheLoai (danh_muc, ten_theloai)
+INSERT INTO dbo.TheLoai (danh_muc, ten_theloai, vi_tri)
 VALUES
-(1, N'Tiểu thuyết lịch sử'),
-(1, N'Tiểu thuyết tình cảm'),
-(2, N'Truyện ngắn kinh điển'),
-(2, N'Truyện ngắn hiện đại');
+(1, N'Tiểu thuyết lịch sử', '03'),
+(1, N'Tiểu thuyết tình cảm', '05'),
+(2, N'Truyện ngắn kinh điển', '08'),
+(2, N'Truyện ngắn hiện đại', '11');
 
 -- Chèn dữ liệu mẫu cho bảng dbo.SinhVien
 INSERT INTO dbo.SinhVien (ten_sv, sdt, gioi_tinh, lop, ngay_them)
@@ -31,10 +31,10 @@ VALUES
 (2, 2, '2024-02-28 11:14:27', 0, '2024-03-20 10:45:00', 2700.78);
 
 -- Chèn dữ liệu mẫu cho bảng dbo.Sach
-INSERT INTO dbo.Sach (ten_sach, so_luong, ngay_them, nha_xb, hinh_anh, tac_gia, the_loai, trang_thai)
+INSERT INTO dbo.Sach (ten_sach, so_luong, ngay_them, nha_xb, hinh_anh, tac_gia, the_loai, trang_thai, vi_tri)
 VALUES
-(N'Bí mật của vũ trụ', 50, '2024-02-28 11:14:27', N'NXB Khoa học', 'bimat.jpg', N'Nguyễn Văn A', 1, 1),
-(N'Tình yêu và thơ', 30, '2024-02-28 11:14:27', N'NXB Văn hóa', 'tinhyeu.jpg', N'Trần Thị B', 4, 1);
+(N'Bí mật của vũ trụ', 50, '2024-02-28 11:14:27', N'NXB Khoa học', 'bimat.jpg', N'Nguyễn Văn A', 1, 1, '56'),
+(N'Tình yêu và thơ', 30, '2024-02-28 11:14:27', N'NXB Văn hóa', 'tinhyeu.jpg', N'Trần Thị B', 4, 1, '85');
 
 -- Chèn dữ liệu mẫu cho bảng dbo.ChiTietPhieuMuon
 INSERT INTO dbo.ChiTietPhieuMuon (id_phieumuon, id_sach, so_luong, ghi_chu)

@@ -37,4 +37,3 @@ DBCC CHECKIDENT ('dbo.ChiTietPhieuMuon', RESEED, 0);
 
 -- Bật lại kiểm tra khóa ngoại
 EXEC sp_MSForEachTable 'ALTER TABLE ? CHECK CONSTRAINT ALL'
-
